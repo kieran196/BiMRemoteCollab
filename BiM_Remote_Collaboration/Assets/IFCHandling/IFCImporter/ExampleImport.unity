@@ -1,0 +1,3399 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 1
+  m_LightmapEditorSettings:
+    serializedVersion: 10
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &35880135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: e20917da1773d68468debe3b37945e2f,
+    type: 3}
+  m_PrefabInstance: {fileID: 208336136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &35880137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35880135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: S-STRS-____-OTLN
+  - Name: Name
+    Value: S-STRS-____-OTLN
+--- !u!114 &35880138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35880135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_MemberCommon
+  - Name: id
+    Value: 3SmbFggWX7HupMQEQ7mrMN
+  - Name: IsExternal
+    Value: false
+  - Name: Reference
+    Value: 190mm max riser 250mm going
+  - Name: LoadBearing
+    Value: true
+  - Name: Span
+    Value: 50
+  - Name: Slope
+    Value: 0
+--- !u!114 &35880139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35880135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -967006691, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMemberType
+  - Name: id
+    Value: 2QGaJLBkv2_g7HmUIQHvZe
+  - Name: Tag
+    Value: 166170
+  - Name: Name
+    Value: Stringer:Stringer - 50mm Width
+  - Name: PredefinedType
+    Value: STRINGER
+--- !u!114 &35880140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35880135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -417632206, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMember
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mrG5
+  - Name: Tag
+    Value: 215845
+  - Name: Name
+    Value: Assembled Stair:Stair:215735 Stringer 1
+  - Name: ObjectType
+    Value: Assembled Stair:190mm max riser 250mm going:166172
+  - Name: ObjectPlacement
+    Value: 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+--- !u!1 &110661351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 110661353}
+  - component: {fileID: 110661352}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &110661352
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110661351}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &110661353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110661351}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &187924987 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 1a67062fe88afe04a8aa53eb57c1edec,
+    type: 3}
+  m_PrefabInstance: {fileID: 875820848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &187924989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187924987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: A-WALL-____-OTLN
+  - Name: Name
+    Value: A-WALL-____-OTLN
+--- !u!114 &187924990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187924987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -261703775, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMaterialLayerSetUsage
+  - Name: id
+    Value: IfcMaterialLayerSetUsage_771
+  - Name: LayerSetName
+    Value: Basic Wall:Double brick - 270
+  - Name: DirectionSense
+    Value: NEGATIVE
+  - Name: LayerSetDirection
+    Value: AXIS2
+  - Name: OffsetFromReferenceLine
+    Value: 135
+  MaterialLayers:
+  - Name: Masonry - Brick - Brown
+    LayerThickness: 110
+  - Name: Air Infiltration Barrier
+    LayerThickness: 50
+  - Name: Masonry
+    LayerThickness: 110
+--- !u!114 &187924991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187924987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_WallCommon
+  - Name: id
+    Value: 3SmbFggWX7HupMQEs7mrDl
+  - Name: LoadBearing
+    Value: false
+  - Name: Reference
+    Value: Double brick - 270
+  - Name: ExtendToStructure
+    Value: false
+  - Name: IsExternal
+    Value: true
+  - Name: ThermalTransmittance
+    Value: 1.08939
+--- !u!114 &187924992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187924987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -667940390, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWallType
+  - Name: id
+    Value: 34CfS1e5vFPw3xqVEsGNSQ
+  - Name: Tag
+    Value: 99977
+  - Name: Name
+    Value: Basic Wall:Double brick - 270
+  - Name: PredefinedType
+    Value: STANDARD
+--- !u!114 &187924993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187924987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1234008911, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWallStandardCase
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mrDl
+  - Name: Tag
+    Value: 216143
+  - Name: Name
+    Value: Basic Wall:Double brick - 270:216143
+  - Name: ObjectType
+    Value: Basic Wall:Double brick - 270:99977
+  - Name: ObjectPlacement
+    Value: -1 0 0 0 0 -1 0 0 0 0 1 0 8333.18 1920.2 0 1
+--- !u!1001 &208336136
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 809245873}
+    m_Modifications:
+    - target: {fileID: 100004, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+      propertyPath: m_Name
+      value: IfcMember.dae
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+      propertyPath: m_Name
+      value: Assembled Stair:Stair:215735 Stringer 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+      propertyPath: m_Name
+      value: Assembled Stair:Stair:215735 Stringer 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e20917da1773d68468debe3b37945e2f, type: 3}
+--- !u!1 &290909285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 290909286}
+  - component: {fileID: 290909287}
+  m_Layer: 0
+  m_Name: IfcCovering.dae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &290909286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290909285}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1125258203}
+  m_Father: {fileID: 809245873}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &290909287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290909285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 866868759, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FileDescription:
+  - Name: Description
+    Value: ViewDefinition [CoordinationView_V2.0]
+  - Name: Implementation Level
+    Value: 2;1
+  FileName:
+  - Name: Name
+    Value: Project Number
+  - Name: Author
+    Value: 
+  - Name: Time Stamp
+    Value: 26/03/2019 1:43:56 PM
+  - Name: Organization
+    Value: 
+  - Name: Authorization
+    Value: 
+  - Name: Originating System
+    Value: 20180328_1600(x64) - Exporter 19.0.1.1 - Alternate UI 19.0.1.1
+  - Name: Preprocessor Version
+    Value: 'The EXPRESS Data Manager Version 5.02.0100.07 : 28 Aug 2013'
+  FileSchema:
+  - Name: Schema Identifiers
+    Value: IFC2X3
+--- !u!1 &333817828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: e20917da1773d68468debe3b37945e2f,
+    type: 3}
+  m_PrefabInstance: {fileID: 208336136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &333817830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333817828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: S-STRS-____-OTLN
+  - Name: Name
+    Value: S-STRS-____-OTLN
+--- !u!114 &333817831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333817828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_MemberCommon
+  - Name: id
+    Value: 0GDSZ1i9b2ah1VvsucoTkD
+  - Name: IsExternal
+    Value: false
+  - Name: Reference
+    Value: 190mm max riser 250mm going
+  - Name: LoadBearing
+    Value: true
+  - Name: Slope
+    Value: 0
+  - Name: Span
+    Value: 50
+--- !u!114 &333817832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333817828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -967006691, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMemberType
+  - Name: id
+    Value: 2QGaJLBkv2_g7HmUIQHvZe
+  - Name: Tag
+    Value: 166170
+  - Name: Name
+    Value: Stringer:Stringer - 50mm Width
+  - Name: PredefinedType
+    Value: STRINGER
+--- !u!114 &333817833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333817828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -417632206, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMember
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mrG6
+  - Name: Tag
+    Value: 215846
+  - Name: Name
+    Value: Assembled Stair:Stair:215735 Stringer 2
+  - Name: ObjectType
+    Value: Assembled Stair:190mm max riser 250mm going:166172
+  - Name: ObjectPlacement
+    Value: 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+--- !u!1 &353092054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: f103b6807b5b68f47a07d820e37e95fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1424254247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &353092055 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: f103b6807b5b68f47a07d820e37e95fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1424254247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &353092056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353092054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 866868759, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FileDescription:
+  - Name: Description
+    Value: ViewDefinition [CoordinationView_V2.0]
+  - Name: Implementation Level
+    Value: 2;1
+  FileName:
+  - Name: Name
+    Value: Project Number
+  - Name: Author
+    Value: 
+  - Name: Time Stamp
+    Value: 26/03/2019 1:43:56 PM
+  - Name: Organization
+    Value: 
+  - Name: Authorization
+    Value: 
+  - Name: Originating System
+    Value: 20180328_1600(x64) - Exporter 19.0.1.1 - Alternate UI 19.0.1.1
+  - Name: Preprocessor Version
+    Value: 'The EXPRESS Data Manager Version 5.02.0100.07 : 28 Aug 2013'
+  FileSchema:
+  - Name: Schema Identifiers
+    Value: IFC2X3
+--- !u!1 &452802510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: 1a67062fe88afe04a8aa53eb57c1edec,
+    type: 3}
+  m_PrefabInstance: {fileID: 875820848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &452802512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452802510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: A-WALL-____-OTLN
+  - Name: Name
+    Value: A-WALL-____-OTLN
+--- !u!114 &452802513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452802510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -261703775, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMaterialLayerSetUsage
+  - Name: id
+    Value: IfcMaterialLayerSetUsage_699
+  - Name: LayerSetName
+    Value: Basic Wall:Double brick - 270
+  - Name: DirectionSense
+    Value: NEGATIVE
+  - Name: LayerSetDirection
+    Value: AXIS2
+  - Name: OffsetFromReferenceLine
+    Value: 135
+  MaterialLayers:
+  - Name: Masonry - Brick - Brown
+    LayerThickness: 110
+  - Name: Air Infiltration Barrier
+    LayerThickness: 50
+  - Name: Masonry
+    LayerThickness: 110
+--- !u!114 &452802514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452802510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_WallCommon
+  - Name: id
+    Value: 3SmbFggWX7HupMQEs7mrJC
+  - Name: LoadBearing
+    Value: false
+  - Name: Reference
+    Value: Double brick - 270
+  - Name: ExtendToStructure
+    Value: false
+  - Name: IsExternal
+    Value: true
+  - Name: ThermalTransmittance
+    Value: 1.08939
+--- !u!114 &452802515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452802510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -667940390, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWallType
+  - Name: id
+    Value: 34CfS1e5vFPw3xqVEsGNSQ
+  - Name: Tag
+    Value: 99977
+  - Name: Name
+    Value: Basic Wall:Double brick - 270
+  - Name: PredefinedType
+    Value: STANDARD
+--- !u!114 &452802516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452802510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1234008911, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWallStandardCase
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mrJC
+  - Name: Tag
+    Value: 216044
+  - Name: Name
+    Value: Basic Wall:Double brick - 270:216044
+  - Name: ObjectType
+    Value: Basic Wall:Double brick - 270:99977
+  - Name: ObjectPlacement
+    Value: 1 0 0 0 0 1 0 0 0 0 1 0 -6666.82 -7079.8 0 1
+--- !u!1001 &511929029
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2094635419}
+    m_Modifications:
+    - target: {fileID: 100000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_Name
+      value: M_Single-Flush:0813 x 2134mm:216207
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.374675
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.944801
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.000000030908623
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.000000030908623
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf0e748234d2f5043bd3a904e47fdeb9, type: 3}
+--- !u!1 &538421538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 538421539}
+  - component: {fileID: 538421540}
+  m_Layer: 0
+  m_Name: IfcStairFlight.dae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &538421539
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538421538}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1016920901}
+  m_Father: {fileID: 809245873}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &538421540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538421538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 866868759, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FileDescription:
+  - Name: Description
+    Value: ViewDefinition [CoordinationView_V2.0]
+  - Name: Implementation Level
+    Value: 2;1
+  FileName:
+  - Name: Name
+    Value: Project Number
+  - Name: Author
+    Value: 
+  - Name: Time Stamp
+    Value: 26/03/2019 1:43:56 PM
+  - Name: Organization
+    Value: 
+  - Name: Authorization
+    Value: 
+  - Name: Originating System
+    Value: 20180328_1600(x64) - Exporter 19.0.1.1 - Alternate UI 19.0.1.1
+  - Name: Preprocessor Version
+    Value: 'The EXPRESS Data Manager Version 5.02.0100.07 : 28 Aug 2013'
+  FileSchema:
+  - Name: Schema Identifiers
+    Value: IFC2X3
+--- !u!1 &539257891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 539257892}
+  - component: {fileID: 539257894}
+  - component: {fileID: 539257893}
+  m_Layer: 0
+  m_Name: Importer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &539257892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539257891}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 606209202}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &539257893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539257891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50230c252c3d88541a4fb649d7521e92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialDB:
+  - IFCClass: IfcWindow
+    Material: {fileID: 2100000, guid: 6e9c6e001c061ee4d886506b4220482b, type: 2}
+  - IFCClass: IfcSite
+    Material: {fileID: 2100000, guid: 5f208e503b1f2c04aad5dc65bb51eef1, type: 2}
+--- !u!114 &539257894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539257891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63abd6e2b86331445aee39656ac39d99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaterialAssignment: {fileID: 539257893}
+--- !u!1 &586435238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 1a67062fe88afe04a8aa53eb57c1edec,
+    type: 3}
+  m_PrefabInstance: {fileID: 875820848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &586435240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586435238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: A-WALL-____-OTLN
+  - Name: Name
+    Value: A-WALL-____-OTLN
+--- !u!114 &586435241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586435238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -261703775, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMaterialLayerSetUsage
+  - Name: id
+    Value: IfcMaterialLayerSetUsage_805
+  - Name: LayerSetName
+    Value: Basic Wall:Double brick - 270
+  - Name: DirectionSense
+    Value: NEGATIVE
+  - Name: LayerSetDirection
+    Value: AXIS2
+  - Name: OffsetFromReferenceLine
+    Value: 135
+  MaterialLayers:
+  - Name: Masonry - Brick - Brown
+    LayerThickness: 110
+  - Name: Air Infiltration Barrier
+    LayerThickness: 50
+  - Name: Masonry
+    LayerThickness: 110
+--- !u!114 &586435242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586435238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_WallCommon
+  - Name: id
+    Value: 3SmbFggWX7HupMQEs7mrDN
+  - Name: LoadBearing
+    Value: false
+  - Name: Reference
+    Value: Double brick - 270
+  - Name: ExtendToStructure
+    Value: false
+  - Name: IsExternal
+    Value: true
+  - Name: ThermalTransmittance
+    Value: 1.08939
+--- !u!114 &586435243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586435238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -667940390, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWallType
+  - Name: id
+    Value: 34CfS1e5vFPw3xqVEsGNSQ
+  - Name: Tag
+    Value: 99977
+  - Name: Name
+    Value: Basic Wall:Double brick - 270
+  - Name: PredefinedType
+    Value: STANDARD
+--- !u!114 &586435244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586435238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1234008911, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWallStandardCase
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mrDN
+  - Name: Tag
+    Value: 216183
+  - Name: Name
+    Value: Basic Wall:Double brick - 270:216183
+  - Name: ObjectType
+    Value: Basic Wall:Double brick - 270:99977
+  - Name: ObjectPlacement
+    Value: 0 -1 0 0 1 0 0 0 0 0 1 0 -6531.82 1785.2 0 1
+--- !u!1 &606209200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 606209202}
+  - component: {fileID: 606209201}
+  m_Layer: 0
+  m_Name: IFC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &606209201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606209200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84735066ddda809429f5d0604964f183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useNamesInsteadOfTypes: 1
+  ifcName: Project4
+--- !u!4 &606209202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606209200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 539257892}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &645172828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: e20917da1773d68468debe3b37945e2f,
+    type: 3}
+  m_PrefabInstance: {fileID: 208336136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &645172829 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: e20917da1773d68468debe3b37945e2f,
+    type: 3}
+  m_PrefabInstance: {fileID: 208336136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &645172830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645172828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 866868759, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FileDescription:
+  - Name: Description
+    Value: ViewDefinition [CoordinationView_V2.0]
+  - Name: Implementation Level
+    Value: 2;1
+  FileName:
+  - Name: Name
+    Value: Project Number
+  - Name: Author
+    Value: 
+  - Name: Time Stamp
+    Value: 26/03/2019 1:43:56 PM
+  - Name: Organization
+    Value: 
+  - Name: Authorization
+    Value: 
+  - Name: Originating System
+    Value: 20180328_1600(x64) - Exporter 19.0.1.1 - Alternate UI 19.0.1.1
+  - Name: Preprocessor Version
+    Value: 'The EXPRESS Data Manager Version 5.02.0100.07 : 28 Aug 2013'
+  FileSchema:
+  - Name: Schema Identifiers
+    Value: IFC2X3
+--- !u!1 &696306231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: ba6955b2e0d81eb4884388f6faee28fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1735290636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &696306233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696306231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: A-FLOR-HRAL-OTLN
+  - Name: Name
+    Value: A-FLOR-HRAL-OTLN
+--- !u!114 &696306234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696306231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_RailingCommon
+  - Name: id
+    Value: 1t74gSU3v1TfLsYevtJiRj
+  - Name: IsExternal
+    Value: false
+  - Name: Reference
+    Value: 1100mm
+  - Name: Height
+    Value: 1100
+--- !u!114 &696306235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696306231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -713673218, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcRailing
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mrHy
+  - Name: Tag
+    Value: 215900
+  - Name: Name
+    Value: Railing:1100mm:215900
+  - Name: ObjectType
+    Value: Railing:1100mm
+  - Name: PredefinedType
+    Value: NOTDEFINED
+  - Name: ObjectPlacement
+    Value: 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+--- !u!1 &809245872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 809245873}
+  m_Layer: 0
+  m_Name: Project4 1862
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &809245873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809245872}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1091544612}
+  - {fileID: 290909286}
+  - {fileID: 353092055}
+  - {fileID: 1117430950}
+  - {fileID: 1831190551}
+  - {fileID: 2094635419}
+  - {fileID: 538421539}
+  - {fileID: 645172829}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &839910911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 1a67062fe88afe04a8aa53eb57c1edec,
+    type: 3}
+  m_PrefabInstance: {fileID: 875820848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &839910913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839910911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: A-WALL-____-OTLN
+  - Name: Name
+    Value: A-WALL-____-OTLN
+--- !u!114 &839910914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839910911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -261703775, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMaterialLayerSetUsage
+  - Name: id
+    Value: IfcMaterialLayerSetUsage_737
+  - Name: LayerSetName
+    Value: Basic Wall:Double brick - 270
+  - Name: DirectionSense
+    Value: NEGATIVE
+  - Name: LayerSetDirection
+    Value: AXIS2
+  - Name: OffsetFromReferenceLine
+    Value: 135
+  MaterialLayers:
+  - Name: Masonry - Brick - Brown
+    LayerThickness: 110
+  - Name: Air Infiltration Barrier
+    LayerThickness: 50
+  - Name: Masonry
+    LayerThickness: 110
+--- !u!114 &839910915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839910911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_WallCommon
+  - Name: id
+    Value: 3SmbFggWX7HupMQEs7mrCu
+  - Name: LoadBearing
+    Value: false
+  - Name: Reference
+    Value: Double brick - 270
+  - Name: ExtendToStructure
+    Value: false
+  - Name: IsExternal
+    Value: true
+  - Name: ThermalTransmittance
+    Value: 1.08939
+--- !u!114 &839910916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839910911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -667940390, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWallType
+  - Name: id
+    Value: 34CfS1e5vFPw3xqVEsGNSQ
+  - Name: Tag
+    Value: 99977
+  - Name: Name
+    Value: Basic Wall:Double brick - 270
+  - Name: PredefinedType
+    Value: STANDARD
+--- !u!114 &839910917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839910911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1234008911, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWallStandardCase
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mrCu
+  - Name: Tag
+    Value: 216088
+  - Name: Name
+    Value: Basic Wall:Double brick - 270:216088
+  - Name: ObjectType
+    Value: Basic Wall:Double brick - 270:99977
+  - Name: ObjectPlacement
+    Value: 0 1 0 0 -1 0 0 0 0 0 1 0 8468.18 -6944.8 0 1
+--- !u!1 &864903831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: f103b6807b5b68f47a07d820e37e95fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1424254247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &864903833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864903831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: A-FLOR-____-OTLN
+  - Name: Name
+    Value: A-FLOR-____-OTLN
+--- !u!114 &864903834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864903831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -261703775, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMaterialLayerSetUsage
+  - Name: id
+    Value: IfcMaterialLayerSetUsage_169
+  - Name: LayerSetName
+    Value: Floor:Generic 150mm
+  - Name: DirectionSense
+    Value: POSITIVE
+  - Name: LayerSetDirection
+    Value: AXIS3
+  - Name: OffsetFromReferenceLine
+    Value: 0
+  MaterialLayers:
+  - Name: ' <Unnamed>'
+    LayerThickness: 150
+--- !u!114 &864903835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864903831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_SlabCommon
+  - Name: id
+    Value: 3SmbFggWX7HupMQEk7mrMg
+  - Name: Reference
+    Value: Generic 150mm
+  - Name: IsExternal
+    Value: false
+  - Name: LoadBearing
+    Value: false
+  - Name: PitchAngle
+    Value: 0
+--- !u!114 &864903836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864903831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1417632626, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcSlab
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mrMg
+  - Name: Tag
+    Value: 215690
+  - Name: Name
+    Value: Floor:Generic 150mm:215690
+  - Name: ObjectType
+    Value: Floor:Generic 150mm
+  - Name: PredefinedType
+    Value: FLOOR
+  - Name: ObjectPlacement
+    Value: 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+--- !u!1001 &875820848
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 809245873}
+    m_Modifications:
+    - target: {fileID: 100008, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_Name
+      value: IfcWallStandardCase.dae
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_Name
+      value: Basic Wall:Double brick - 270:216088
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_Name
+      value: Basic Wall:Double brick - 270:216143
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_Name
+      value: Basic Wall:Double brick - 270:216183
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_Name
+      value: Basic Wall:Double brick - 270:216044
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1a67062fe88afe04a8aa53eb57c1edec, type: 3}
+--- !u!1001 &944552350
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 538421539}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+      propertyPath: m_Name
+      value: Assembled Stair:Stair:215735 Run 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e63416739f8f3840ba92b8a56834ab3, type: 3}
+--- !u!1 &1016920900 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 6e63416739f8f3840ba92b8a56834ab3,
+    type: 3}
+  m_PrefabInstance: {fileID: 944552350}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1016920901 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 6e63416739f8f3840ba92b8a56834ab3,
+    type: 3}
+  m_PrefabInstance: {fileID: 944552350}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1016920902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016920900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: S-STRS-____-OTLN
+  - Name: Name
+    Value: S-STRS-____-OTLN
+--- !u!114 &1016920903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016920900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_StairFlightCommon
+  - Name: id
+    Value: 04kg_gRNbCnvrj7wVC5NZn
+  - Name: Reference
+    Value: 50mm Tread 13mm Riser
+  - Name: NumberOfRiser
+    Value: 17
+  - Name: NumberOfTreads
+    Value: 16
+  - Name: RiserHeight
+    Value: 181.818
+  - Name: TreadLength
+    Value: 250
+  - Name: TreadLengthAtOffset
+    Value: 250
+  - Name: NosingLength
+    Value: 0
+  - Name: WalkingLineOffset
+    Value: 500
+  - Name: WaistThickness
+    Value: 1000
+--- !u!114 &1016920904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016920900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1031961844, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcStairFlight
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mrG3
+  - Name: Tag
+    Value: 215843
+  - Name: Name
+    Value: Assembled Stair:Stair:215735 Run 1
+  - Name: ObjectType
+    Value: Assembled Stair:190mm max riser 250mm going:166172
+  - Name: RiserHeight
+    Value: 0.596516
+  - Name: TreadLength
+    Value: 0.82021
+  - Name: NumberOfRiser
+    Value: 17
+  - Name: NumberOfTreads
+    Value: 16
+  - Name: ObjectPlacement
+    Value: 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+--- !u!1 &1091544611 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100008, guid: 1a67062fe88afe04a8aa53eb57c1edec,
+    type: 3}
+  m_PrefabInstance: {fileID: 875820848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1091544612 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400008, guid: 1a67062fe88afe04a8aa53eb57c1edec,
+    type: 3}
+  m_PrefabInstance: {fileID: 875820848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1091544613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091544611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 866868759, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FileDescription:
+  - Name: Description
+    Value: ViewDefinition [CoordinationView_V2.0]
+  - Name: Implementation Level
+    Value: 2;1
+  FileName:
+  - Name: Name
+    Value: Project Number
+  - Name: Author
+    Value: 
+  - Name: Time Stamp
+    Value: 26/03/2019 1:43:56 PM
+  - Name: Organization
+    Value: 
+  - Name: Authorization
+    Value: 
+  - Name: Originating System
+    Value: 20180328_1600(x64) - Exporter 19.0.1.1 - Alternate UI 19.0.1.1
+  - Name: Preprocessor Version
+    Value: 'The EXPRESS Data Manager Version 5.02.0100.07 : 28 Aug 2013'
+  FileSchema:
+  - Name: Schema Identifiers
+    Value: IFC2X3
+--- !u!1 &1117430949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: ba6955b2e0d81eb4884388f6faee28fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1735290636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1117430950 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: ba6955b2e0d81eb4884388f6faee28fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1735290636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1117430951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117430949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 866868759, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FileDescription:
+  - Name: Description
+    Value: ViewDefinition [CoordinationView_V2.0]
+  - Name: Implementation Level
+    Value: 2;1
+  FileName:
+  - Name: Name
+    Value: Project Number
+  - Name: Author
+    Value: 
+  - Name: Time Stamp
+    Value: 26/03/2019 1:43:56 PM
+  - Name: Organization
+    Value: 
+  - Name: Authorization
+    Value: 
+  - Name: Originating System
+    Value: 20180328_1600(x64) - Exporter 19.0.1.1 - Alternate UI 19.0.1.1
+  - Name: Preprocessor Version
+    Value: 'The EXPRESS Data Manager Version 5.02.0100.07 : 28 Aug 2013'
+  FileSchema:
+  - Name: Schema Identifiers
+    Value: IFC2X3
+--- !u!1 &1125258202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: e682a40fc477a51489aae1594456c2dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1441522253}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1125258203 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: e682a40fc477a51489aae1594456c2dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1441522253}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1125258204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125258202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: A-CLNG-____-OTLN
+  - Name: Name
+    Value: A-CLNG-____-OTLN
+--- !u!114 &1125258205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125258202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -261703775, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMaterialLayerSetUsage
+  - Name: id
+    Value: IfcMaterialLayerSetUsage_1251
+  - Name: LayerSetName
+    Value: Compound Ceiling:Plain
+  - Name: DirectionSense
+    Value: POSITIVE
+  - Name: LayerSetDirection
+    Value: AXIS3
+  - Name: OffsetFromReferenceLine
+    Value: 0
+  MaterialLayers:
+  - Name: Metal Stud Layer
+    LayerThickness: 45
+  - Name: Gypsum Wall Board
+    LayerThickness: 12
+--- !u!114 &1125258206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125258202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_CoveringCommon
+  - Name: id
+    Value: 3SmbFggWX7HupMQFw7mqtU
+  - Name: Reference
+    Value: Plain
+  - Name: TotalThickness
+    Value: 57
+--- !u!114 &1125258207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125258202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -202151664, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcCovering
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mqtU
+  - Name: Tag
+    Value: 217854
+  - Name: Name
+    Value: Compound Ceiling:Plain:217854
+  - Name: ObjectType
+    Value: Compound Ceiling:Plain
+  - Name: PredefinedType
+    Value: CEILING
+  - Name: ObjectPlacement
+    Value: 1 0 0 0 0 1 0 0 0 0 1 0 0 0 4000 1
+--- !u!1 &1190732872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: e6e5672a06e7f6748869b2884c179527,
+    type: 3}
+  m_PrefabInstance: {fileID: 2006946617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1190732874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190732872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: A-GLAZ-____-OTLN
+  - Name: Name
+    Value: A-GLAZ-____-OTLN
+--- !u!114 &1190732875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190732872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 40497844, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMaterialList
+  - Name: id
+    Value: IfcMaterialList_1166
+  Materials: []
+--- !u!114 &1190732876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190732872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1016640330, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWindowStyle
+  - Name: id
+    Value: 3SmbFggWX7HupMOmM7mr4P
+  - Name: Tag
+    Value: 33083
+  - Name: Name
+    Value: 0915 x 1830mm
+  - Name: Sizeable
+    Value: false
+  - Name: OperationType
+    Value: NOTDEFINED
+  - Name: ConstructionType
+    Value: NOTDEFINED
+  - Name: ParameterTakesPrecedence
+    Value: false
+--- !u!114 &1190732877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190732872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_WindowCommon
+  - Name: id
+    Value: 3SmbFggWX7HupMQEw7mr0Z
+  - Name: IsExternal
+    Value: true
+  - Name: Reference
+    Value: 0915 x 1830mm
+  - Name: ThermalTransmittance
+    Value: 3.6886
+--- !u!114 &1190732878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190732872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 473690124, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWindow
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mr0Z
+  - Name: Tag
+    Value: 216835
+  - Name: Name
+    Value: M_Fixed:0915 x 1830mm:216835
+  - Name: ObjectType
+    Value: 0915 x 1830mm
+  - Name: OverallWidth
+    Value: 915
+  - Name: OverallHeight
+    Value: 1830
+  - Name: ObjectPlacement
+    Value: -1 0 0 0 0 -1 0 0 0 0 1 0 -2666.82 -6944.8 4615.69 1
+--- !u!1 &1233463854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: e6e5672a06e7f6748869b2884c179527,
+    type: 3}
+  m_PrefabInstance: {fileID: 2006946617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1233463856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233463854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: A-GLAZ-____-OTLN
+  - Name: Name
+    Value: A-GLAZ-____-OTLN
+--- !u!114 &1233463857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233463854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 40497844, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMaterialList
+  - Name: id
+    Value: IfcMaterialList_1145
+  Materials: []
+--- !u!114 &1233463858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233463854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1016640330, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWindowStyle
+  - Name: id
+    Value: 3SmbFggWX7HupMOmM7mr4P
+  - Name: Tag
+    Value: 33083
+  - Name: Name
+    Value: 0915 x 1830mm
+  - Name: Sizeable
+    Value: false
+  - Name: OperationType
+    Value: NOTDEFINED
+  - Name: ConstructionType
+    Value: NOTDEFINED
+  - Name: ParameterTakesPrecedence
+    Value: false
+--- !u!114 &1233463859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233463854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_WindowCommon
+  - Name: id
+    Value: 3SmbFggWX7HupMQEw7mr7t
+  - Name: IsExternal
+    Value: true
+  - Name: Reference
+    Value: 0915 x 1830mm
+  - Name: ThermalTransmittance
+    Value: 3.6886
+--- !u!114 &1233463860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233463854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 473690124, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWindow
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mr7t
+  - Name: Tag
+    Value: 216791
+  - Name: Name
+    Value: M_Fixed:0915 x 1830mm:216791
+  - Name: ObjectType
+    Value: 0915 x 1830mm
+  - Name: OverallWidth
+    Value: 915
+  - Name: OverallHeight
+    Value: 1830
+  - Name: ObjectPlacement
+    Value: -1 0 0 0 0 -1 0 0 0 0 1 0 5518.18 -6944.8 4615.69 1
+--- !u!1 &1259932138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: e6e5672a06e7f6748869b2884c179527,
+    type: 3}
+  m_PrefabInstance: {fileID: 2006946617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1259932140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259932138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: A-GLAZ-____-OTLN
+  - Name: Name
+    Value: A-GLAZ-____-OTLN
+--- !u!114 &1259932141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259932138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 40497844, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMaterialList
+  - Name: id
+    Value: IfcMaterialList_1101
+  Materials: []
+--- !u!114 &1259932142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259932138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1016640330, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWindowStyle
+  - Name: id
+    Value: 3SmbFggWX7HupMOmM7mr4P
+  - Name: Tag
+    Value: 33083
+  - Name: Name
+    Value: 0915 x 1830mm
+  - Name: Sizeable
+    Value: false
+  - Name: OperationType
+    Value: NOTDEFINED
+  - Name: ConstructionType
+    Value: NOTDEFINED
+  - Name: ParameterTakesPrecedence
+    Value: false
+--- !u!114 &1259932143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259932138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_WindowCommon
+  - Name: id
+    Value: 3SmbFggWX7HupMQEw7mrBu
+  - Name: IsExternal
+    Value: true
+  - Name: Reference
+    Value: 0915 x 1830mm
+  - Name: ThermalTransmittance
+    Value: 3.6886
+--- !u!114 &1259932144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259932138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 473690124, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWindow
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mrBu
+  - Name: Tag
+    Value: 216536
+  - Name: Name
+    Value: M_Fixed:0915 x 1830mm:216536
+  - Name: ObjectType
+    Value: 0915 x 1830mm
+  - Name: OverallWidth
+    Value: 915
+  - Name: OverallHeight
+    Value: 1830
+  - Name: ObjectPlacement
+    Value: -1 0 0 0 0 -1 0 0 0 0 1 0 -3781.82 -6944.8 4771.81 1
+--- !u!1001 &1424254247
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 809245873}
+    m_Modifications:
+    - target: {fileID: 100004, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+      propertyPath: m_Name
+      value: IfcSlab.dae
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+      propertyPath: m_Name
+      value: Floor:Generic 150mm:215947
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+      propertyPath: m_Name
+      value: Floor:Generic 150mm:215690
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f103b6807b5b68f47a07d820e37e95fb, type: 3}
+--- !u!1001 &1441522253
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 290909286}
+    m_Modifications:
+    - target: {fileID: 100000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+      propertyPath: m_Name
+      value: Compound Ceiling:Plain:217854
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0000005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e682a40fc477a51489aae1594456c2dd, type: 3}
+--- !u!1 &1491138322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1491138326}
+  - component: {fileID: 1491138325}
+  - component: {fileID: 1491138324}
+  - component: {fileID: 1491138323}
+  - component: {fileID: 1491138328}
+  - component: {fileID: 1491138327}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1491138323
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491138322}
+  m_Enabled: 1
+--- !u!124 &1491138324
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491138322}
+  m_Enabled: 1
+--- !u!20 &1491138325
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491138322}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_GateFitMode: 2
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1491138326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491138322}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1491138327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491138322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea697ca2044909345ba810a15e988d21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axes: 0
+  sensitivityX: 5
+  sensitivityY: 5
+  minimumX: -360
+  maximumX: 360
+  minimumY: -60
+  maximumY: 60
+--- !u!114 &1491138328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491138322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 092c22577b322bf49830933b1775a826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yaw:
+    activate: 0
+    keyboardAxis: 0
+    modifiers:
+      leftAlt: 1
+      leftControl: 0
+      leftShift: 0
+    sensitivity: 1
+  pitch:
+    activate: 0
+    keyboardAxis: 1
+    modifiers:
+      leftAlt: 1
+      leftControl: 0
+      leftShift: 0
+    sensitivity: 1
+  roll:
+    activate: 0
+    keyboardAxis: 0
+    modifiers:
+      leftAlt: 1
+      leftControl: 1
+      leftShift: 0
+    sensitivity: 1
+  verticalTranslation:
+    activate: 0
+    keyboardAxis: 1
+    modifiers:
+      leftAlt: 0
+      leftControl: 1
+      leftShift: 0
+    sensitivity: 0.5
+  horizontalTranslation:
+    activate: 1
+    keyboardAxis: 0
+    modifiers:
+      leftAlt: 0
+      leftControl: 0
+      leftShift: 0
+    sensitivity: 0.5
+  depthTranslation:
+    activate: 1
+    keyboardAxis: 1
+    modifiers:
+      leftAlt: 0
+      leftControl: 0
+      leftShift: 0
+    sensitivity: 0.5
+  keyboardHorizontalAxisName: Horizontal
+  keyboardVerticalAxisName: Vertical
+--- !u!1 &1549400582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: e6e5672a06e7f6748869b2884c179527,
+    type: 3}
+  m_PrefabInstance: {fileID: 2006946617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1549400584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549400582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: A-GLAZ-____-OTLN
+  - Name: Name
+    Value: A-GLAZ-____-OTLN
+--- !u!114 &1549400585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549400582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 40497844, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMaterialList
+  - Name: id
+    Value: IfcMaterialList_1124
+  Materials: []
+--- !u!114 &1549400586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549400582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1016640330, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWindowStyle
+  - Name: id
+    Value: 3SmbFggWX7HupMOmM7mr4P
+  - Name: Tag
+    Value: 33083
+  - Name: Name
+    Value: 0915 x 1830mm
+  - Name: Sizeable
+    Value: false
+  - Name: OperationType
+    Value: NOTDEFINED
+  - Name: ConstructionType
+    Value: NOTDEFINED
+  - Name: ParameterTakesPrecedence
+    Value: false
+--- !u!114 &1549400587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549400582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_WindowCommon
+  - Name: id
+    Value: 3SmbFggWX7HupMQEw7mr5h
+  - Name: IsExternal
+    Value: true
+  - Name: Reference
+    Value: 0915 x 1830mm
+  - Name: ThermalTransmittance
+    Value: 3.6886
+--- !u!114 &1549400588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549400582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 473690124, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcWindow
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mr5h
+  - Name: Tag
+    Value: 216651
+  - Name: Name
+    Value: M_Fixed:0915 x 1830mm:216651
+  - Name: ObjectType
+    Value: 0915 x 1830mm
+  - Name: OverallWidth
+    Value: 915
+  - Name: OverallHeight
+    Value: 1830
+  - Name: ObjectPlacement
+    Value: -1 0 0 0 0 -1 0 0 0 0 1 0 6533.18 -6944.8 4771.81 1
+--- !u!1 &1570702742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: cf0e748234d2f5043bd3a904e47fdeb9,
+    type: 3}
+  m_PrefabInstance: {fileID: 511929029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1570702743 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: cf0e748234d2f5043bd3a904e47fdeb9,
+    type: 3}
+  m_PrefabInstance: {fileID: 511929029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1570702744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570702742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: A-DOOR-____-OTLN
+  - Name: Name
+    Value: A-DOOR-____-OTLN
+--- !u!114 &1570702745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570702742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 40497844, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMaterialList
+  - Name: id
+    Value: IfcMaterialList_936
+  Materials: []
+--- !u!114 &1570702746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570702742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_DoorCommon
+  - Name: id
+    Value: 3SmbFggWX7HupMQE27mrEl
+  - Name: IsExternal
+    Value: false
+  - Name: Reference
+    Value: 0813 x 2134mm
+  - Name: ThermalTransmittance
+    Value: 3.7021
+--- !u!114 &1570702747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570702742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1878097697, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcDoorStyle
+  - Name: id
+    Value: 3SmbFggWX7HupMOmM7mr9W
+  - Name: Tag
+    Value: 49484
+  - Name: Name
+    Value: 0813 x 2134mm
+  - Name: Sizeable
+    Value: false
+  - Name: OperationType
+    Value: SINGLE_SWING_RIGHT
+  - Name: ConstructionType
+    Value: NOTDEFINED
+  - Name: ParameterTakesPrecedence
+    Value: false
+--- !u!114 &1570702748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570702742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 693160074, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcDoor
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mrEl
+  - Name: Tag
+    Value: 216207
+  - Name: Name
+    Value: M_Single-Flush:0813 x 2134mm:216207
+  - Name: ObjectType
+    Value: 0813 x 2134mm
+  - Name: OverallWidth
+    Value: 813
+  - Name: OverallHeight
+    Value: 2134
+  - Name: ObjectPlacement
+    Value: -1 0 0 0 0 -1 0 0 0 0 1 0 1374.68 -6944.8 0 1
+--- !u!1001 &1735290636
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 809245873}
+    m_Modifications:
+    - target: {fileID: 100004, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+      propertyPath: m_Name
+      value: IfcRailing.dae
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+      propertyPath: m_Name
+      value: Railing:1100mm:215904
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+      propertyPath: m_Name
+      value: Railing:1100mm:215900
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ba6955b2e0d81eb4884388f6faee28fe, type: 3}
+--- !u!1 &1757132019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: ba6955b2e0d81eb4884388f6faee28fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1735290636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1757132021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757132019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: A-FLOR-HRAL-OTLN
+  - Name: Name
+    Value: A-FLOR-HRAL-OTLN
+--- !u!114 &1757132022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757132019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_RailingCommon
+  - Name: id
+    Value: 2KkU9TT2X0KgNLqVVzrDkh
+  - Name: IsExternal
+    Value: false
+  - Name: Reference
+    Value: 1100mm
+  - Name: Height
+    Value: 1100
+--- !u!114 &1757132023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757132019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -713673218, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcRailing
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mrH0
+  - Name: Tag
+    Value: 215904
+  - Name: Name
+    Value: Railing:1100mm:215904
+  - Name: ObjectType
+    Value: Railing:1100mm
+  - Name: PredefinedType
+    Value: NOTDEFINED
+  - Name: ObjectPlacement
+    Value: 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+--- !u!1 &1767801895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f103b6807b5b68f47a07d820e37e95fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1424254247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1767801897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767801895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -637001453, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcPresentationLayerAssignment
+  - Name: id
+    Value: A-FLOR-____-OTLN
+  - Name: Name
+    Value: A-FLOR-____-OTLN
+--- !u!114 &1767801898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767801895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -261703775, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcMaterialLayerSetUsage
+  - Name: id
+    Value: IfcMaterialLayerSetUsage_612
+  - Name: LayerSetName
+    Value: Floor:Generic 150mm
+  - Name: DirectionSense
+    Value: POSITIVE
+  - Name: LayerSetDirection
+    Value: AXIS3
+  - Name: OffsetFromReferenceLine
+    Value: 0
+  MaterialLayers:
+  - Name: ' <Unnamed>'
+    LayerThickness: 150
+--- !u!114 &1767801899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767801895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -899126602, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Name
+    Value: Pset_SlabCommon
+  - Name: id
+    Value: 3SmbFggWX7HupMQEk7mrIh
+  - Name: Reference
+    Value: Generic 150mm
+  - Name: IsExternal
+    Value: false
+  - Name: LoadBearing
+    Value: false
+--- !u!114 &1767801900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767801895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1417632626, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes:
+  - Name: Product Type
+    Value: IfcSlab
+  - Name: id
+    Value: 3SmbFggWX7HupMOn27mrIh
+  - Name: Tag
+    Value: 215947
+  - Name: Name
+    Value: Floor:Generic 150mm:215947
+  - Name: ObjectType
+    Value: Floor:Generic 150mm
+  - Name: PredefinedType
+    Value: FLOOR
+  - Name: ObjectPlacement
+    Value: 1 0 0 0 0 1 0 0 0 0 1 0 -6531.82 -7079.8 3850 1
+--- !u!1 &1831190550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100008, guid: e6e5672a06e7f6748869b2884c179527,
+    type: 3}
+  m_PrefabInstance: {fileID: 2006946617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1831190551 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400008, guid: e6e5672a06e7f6748869b2884c179527,
+    type: 3}
+  m_PrefabInstance: {fileID: 2006946617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1831190552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831190550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 866868759, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FileDescription:
+  - Name: Description
+    Value: ViewDefinition [CoordinationView_V2.0]
+  - Name: Implementation Level
+    Value: 2;1
+  FileName:
+  - Name: Name
+    Value: Project Number
+  - Name: Author
+    Value: 
+  - Name: Time Stamp
+    Value: 26/03/2019 1:43:56 PM
+  - Name: Organization
+    Value: 
+  - Name: Authorization
+    Value: 
+  - Name: Originating System
+    Value: 20180328_1600(x64) - Exporter 19.0.1.1 - Alternate UI 19.0.1.1
+  - Name: Preprocessor Version
+    Value: 'The EXPRESS Data Manager Version 5.02.0100.07 : 28 Aug 2013'
+  FileSchema:
+  - Name: Schema Identifiers
+    Value: IFC2X3
+--- !u!1001 &2006946617
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 809245873}
+    m_Modifications:
+    - target: {fileID: 100008, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_Name
+      value: IfcWindow.dae
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_Name
+      value: M_Fixed:0915 x 1830mm:216835
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_Name
+      value: M_Fixed:0915 x 1830mm:216651
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_Name
+      value: M_Fixed:0915 x 1830mm:216791
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_Name
+      value: M_Fixed:0915 x 1830mm:216536
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6e5672a06e7f6748869b2884c179527, type: 3}
+--- !u!1 &2094635418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2094635419}
+  - component: {fileID: 2094635420}
+  m_Layer: 0
+  m_Name: IfcDoor.dae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2094635419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094635418}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1570702743}
+  m_Father: {fileID: 809245873}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2094635420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094635418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 866868759, guid: 8f32c36ad386be643af56036e3332769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FileDescription:
+  - Name: Description
+    Value: ViewDefinition [CoordinationView_V2.0]
+  - Name: Implementation Level
+    Value: 2;1
+  FileName:
+  - Name: Name
+    Value: Project Number
+  - Name: Author
+    Value: 
+  - Name: Time Stamp
+    Value: 26/03/2019 1:43:56 PM
+  - Name: Organization
+    Value: 
+  - Name: Authorization
+    Value: 
+  - Name: Originating System
+    Value: 20180328_1600(x64) - Exporter 19.0.1.1 - Alternate UI 19.0.1.1
+  - Name: Preprocessor Version
+    Value: 'The EXPRESS Data Manager Version 5.02.0100.07 : 28 Aug 2013'
+  FileSchema:
+  - Name: Schema Identifiers
+    Value: IFC2X3
