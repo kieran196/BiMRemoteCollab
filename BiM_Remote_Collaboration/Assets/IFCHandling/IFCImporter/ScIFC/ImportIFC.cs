@@ -83,6 +83,8 @@ public class ImportIFC : MonoBehaviour {
         this.StartCoroutineAsync(Import(path, name));
     }
 
+    private Transform trackedSpace = null;
+
     IEnumerator Import(string path, string objname) {
         IfcUtil util = new IfcUtil();
 
@@ -163,7 +165,10 @@ public class ImportIFC : MonoBehaviour {
 
         yield return Ninja.JumpToUnity;
         go = new GameObject();
+        trackedSpace = GameObject.FindGameObjectWithTag("trackedSpace").transform;
         go.name = name;
+        go.transform.SetParent(trackedSpace);
+
         yield return Ninja.JumpBack;
 
         int cnt = 0;

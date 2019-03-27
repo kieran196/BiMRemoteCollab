@@ -56,12 +56,11 @@ public class cameraRigHandler : NetworkBehaviour {
         label.text = "Current Active Rig:" + currentRig.name + " \n" +
                      "Press 1 to activate VR Sim\n" +
                      "Press 2 to activate VR Rig\n" +
-                     "Press 3 to activate AR Rig\n" +
-                     "Press 4 to activate Operator";
+                     "Press 3 to activate AR Rig";
     }
 
     public GameObject getRig() {
-        return Input.GetKeyDown(KeyCode.Alpha1) ? VRSimulator_Rig : Input.GetKeyDown(KeyCode.Alpha2) ? SteamVR_Rig : null;
+        return Input.GetKeyDown(KeyCode.Alpha1) ? VRSimulator_Rig : Input.GetKeyDown(KeyCode.Alpha2) ? SteamVR_Rig : Input.GetKeyDown(KeyCode.Alpha3) ? AR_Rig : null;
     }
 
     [Command]

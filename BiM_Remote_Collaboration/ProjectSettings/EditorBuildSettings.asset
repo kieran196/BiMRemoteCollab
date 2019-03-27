@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/SampleNetworking.unity
     guid: ff5bdda38668a70419b0076836e7d501
   m_configObjects: {}

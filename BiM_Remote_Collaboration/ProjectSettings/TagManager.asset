@@ -8,6 +8,7 @@ TagManager:
   - FxTemporaire
   - ExcludeTeleport
   - TeleportIgnore
+  - trackedSpace
   layers:
   - Default
   - TransparentFX
