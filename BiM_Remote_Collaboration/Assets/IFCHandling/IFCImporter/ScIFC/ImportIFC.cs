@@ -289,9 +289,9 @@ public class ImportIFC : MonoBehaviour {
         {
             go.transform.Rotate(new Vector3(0, 1, 0), (float)util.TrueNorth*-1);
         }
-
-        PrefabUtility.CreatePrefab("Assets/IFCHandling/IFCGeneratedGeometry/" + name + ".prefab", go);
-
+        #if UNITY_EDITOR
+            PrefabUtility.CreatePrefab("Assets/IFCHandling/IFCGeneratedGeometry/" + name + ".prefab", go);
+        #endif
         allFinished = true;
 
         // callback for external
