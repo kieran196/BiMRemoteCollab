@@ -20,7 +20,8 @@ using UnityEngine;
 public class Manager : MonoBehaviour {
 
     ImportIFC import;
-    
+
+    public static bool importComplete = false;
     public bool useNamesInsteadOfTypes = true;
     public string ifcName;
 
@@ -45,6 +46,7 @@ public class Manager : MonoBehaviour {
         {
             Debug.Log(vars.ToString());
         }
+        importComplete = true;
 
     }
 

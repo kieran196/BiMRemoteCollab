@@ -29,6 +29,8 @@ using int_t = System.Int32;
 #endif
 
 public class ImportIFC : MonoBehaviour {
+    public static List<string> itemReferences = new List<string>();
+    public static List<GameObject> itemList = new List<GameObject>();
 
     List<IfcItem> items;
     Material initMaterial;
@@ -51,7 +53,7 @@ public class ImportIFC : MonoBehaviour {
     /* delegates */
     public delegate void CallbackEventHandler(GameObject go);
     public event CallbackEventHandler ImportFinished;
-
+    public GameObject dimension;
     /* public editor assignable variables */
     public MaterialAssignment MaterialAssignment;
 
@@ -201,11 +203,13 @@ public class ImportIFC : MonoBehaviour {
             {
                 m.name = item.ifcType;
             }
-
             // store additional properties
             List<IFCVariables.IfcVar> ifcVar = new List<IFCVariables.IfcVar>();
             ifcVar.Add(new IFCVariables.IfcVar { key = "name", value = item.name });
             ifcVar.Add(new IFCVariables.IfcVar { key = "type", value = item.ifcType });
+            if (!itemReferences.Contains(item.ifcType)) {
+                itemReferences.Add(item.ifcType);
+            }
             ifcVar.Add(new IFCVariables.IfcVar { key = "guid", value = item.guid });
             ifcVar.Add(new IFCVariables.IfcVar { key = "description", value = item.description });
             meshToIfcVars.Add(m, ifcVar);
@@ -269,9 +273,26 @@ public class ImportIFC : MonoBehaviour {
             }
 
             GameObject child = new GameObject(m.name);
+            itemList.Add(child);
             child.transform.parent = go.transform;
             MeshFilter meshFilter = (MeshFilter)child.AddComponent(typeof(MeshFilter));
             meshFilter.mesh = m;
+            MeshCollider meshColider = (MeshCollider)child.AddComponent(typeof(MeshCollider));
+            meshColider.convex = true;
+            Vector3 meshSize = meshColider.bounds.size;
+            Vector3 meshCenterPos = meshColider.bounds.center;
+            GameObject xCoord = Instantiate(dimension, child.transform);
+            GameObject yCoord = Instantiate(dimension, child.transform);
+            GameObject zCoord = Instantiate(dimension, child.transform);
+            xCoord.transform.localScale = new Vector3(meshSize.x, 0.1f, 0.1f);
+            yCoord.transform.localScale = new Vector3(0.1f, meshSize.y, 0.1f);
+            zCoord.transform.localScale = new Vector3(0.1f, 0.1f, meshSize.z);
+
+            xCoord.transform.localPosition = meshCenterPos;
+            yCoord.transform.localPosition = meshCenterPos;
+            zCoord.transform.localPosition = meshCenterPos;
+    
+            print(child.name +", Bounds:"+meshColider.bounds.size + " , " + meshColider.bounds.center);
             MeshRenderer renderer = child.AddComponent(typeof(MeshRenderer)) as MeshRenderer;
             renderer.material = mat;
 

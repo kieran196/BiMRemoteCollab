@@ -305,15 +305,7 @@ public class buttonEvents : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        getLayers();
-        AllSceneObjects = Resources.FindObjectsOfTypeAll<GameObject>();
-        AllInteractableObjects = new List<GameObject>();
-        foreach (GameObject obj in AllSceneObjects) {
-            if (Contains(obj.layer)) {
-                AllInteractableObjects.Add(obj);
-                //GameObject measurer = Instantiate(measureObj);
-            }
-        }
+        trackedSpace = GameObject.FindGameObjectWithTag("trackedSpace");
     }
     public GameObject toggleLayer;
     public GameObject layerParent;
@@ -327,7 +319,7 @@ public class buttonEvents : MonoBehaviour {
         print("Toggle has been changed..");
     }
 
-    public void getLayers() {
+    /*public void getLayers() {
         for (int i=0; i<layers.Length;i++) {
             string layer = LayerMask.LayerToName((int)Mathf.Log(layers[i].value, 2));
             GameObject newLayer = Instantiate(toggleLayer);
@@ -344,27 +336,84 @@ public class buttonEvents : MonoBehaviour {
             newLayer.GetComponentInChildren<Text>().text = layer;
             yVal -= 10;
         }
+    }*/
+
+    public void getLayers() {
+        char[] ifcTrim = { 'I', 'f', 'c' };
+        print("Assigning layers..");
+        assignedLayers = true;
+        for (int i = 0; i < ImportIFC.itemReferences.Count; i++) {
+            string name = ImportIFC.itemReferences[i];
+            name = name.TrimStart(ifcTrim);
+            print("Layer:" + i + " | " + name);
+            GameObject newLayer = Instantiate(toggleLayer);
+            newLayer.name = name;
+            newLayer.GetComponent<Toggle>().onValueChanged.AddListener(delegate {
+                ToggleValueChanged();
+            });
+            newLayer.transform.SetParent(layerParent.transform);
+            newLayer.transform.localPosition = new Vector3(30f, yVal, 0f);
+            newLayer.GetComponentInChildren<Text>().text = name;
+            yVal -= 10;
+        }
     }
 
-    private GameObject[] AllSceneObjects;
-    private List<GameObject> AllInteractableObjects;
     public void changeLayerState() {
-        string layerName = EventSystem.current.currentSelectedGameObject.name;
-        print("Layer name:" + layerName);
+        string name = "Ifc"+EventSystem.current.currentSelectedGameObject.name;
+        print("name:" + name);
         bool active = EventSystem.current.currentSelectedGameObject.GetComponent<Toggle>().isOn;
-        LayerMask layer = LayerMask.NameToLayer(layerName);
-        foreach (GameObject obj in AllInteractableObjects) {
-            if (LayerMask.LayerToName(obj.layer) == layerName) {
-                print("Object:" + obj.name);
+        foreach (GameObject obj in ImportIFC.itemList) {
+            string objRef = obj.GetComponent<IFCVariables>() != null ? obj.GetComponent<IFCVariables>().vars[1].value : null;
+            if (objRef != null && objRef == name) {
                 obj.SetActive(active);
             }
         }
     }
 
-    public GameObject trackedSpace;
+    public void makeTransparent() { //TODO - Make models transparent on building-mode
 
+    }
+
+    //private bool selectedObject = false;
+
+    public void selectObject() {
+        GameObject button = EventSystem.current.currentSelectedGameObject;
+        Vector3 size = raycast.selectedObject.GetComponent<MeshCollider>().bounds.size;
+        Vector3 dim = raycast.selectedObject.GetComponent<MeshCollider>().bounds.center;
+
+        //selectedObject = !selectedObject;
+        GameObject panel = button.transform.GetChild(1).gameObject;
+        panel.GetComponentInChildren<Text>().text = "Dim: "+ size + "\nPos: "+ dim+ "";
+    }
+
+    private bool buildingMode = false;
+
+    public void viewDimensions() {
+        GameObject button = EventSystem.current.currentSelectedGameObject;
+        buildingMode = !buildingMode;
+        button.GetComponentInChildren<Text>().text = buildingMode ? "Building Mode\nON" : "Building Mode\nOFF";
+        foreach (GameObject obj in ImportIFC.itemList) {
+            if (buildingMode) {
+                //obj.GetComponent<Renderer>().enabled = false;
+                foreach (Transform child in obj.transform) {
+                    child.GetComponent<Renderer>().enabled = true;
+                }
+            } else {
+                //obj.GetComponent<Renderer>().enabled = true;
+                foreach (Transform child in obj.transform) {
+                    child.GetComponent<Renderer>().enabled = false;
+                }
+            }
+        }
+    }
+
+    public GameObject trackedSpace;
+    private bool assignedLayers = false;
     // Update is called once per frame
     void Update () {
+        if (Manager.importComplete && !assignedLayers) {
+            getLayers();
+        }
         oldParent = trackedSpace.transform;
 		if (groupSelectionEnabled == true) {
             selectionGroup.transform.position = Input.mousePosition;
