@@ -168,8 +168,9 @@ public class ImportIFC : MonoBehaviour {
         yield return Ninja.JumpToUnity;
         go = new GameObject();
         trackedSpace = GameObject.FindGameObjectWithTag("trackedSpace").transform;
+        go.tag = "World";
         go.name = name;
-        go.transform.SetParent(trackedSpace);
+        //go.transform.SetParent(trackedSpace);
 
         yield return Ninja.JumpBack;
 

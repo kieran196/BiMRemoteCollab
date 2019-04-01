@@ -394,12 +394,12 @@ public class buttonEvents : MonoBehaviour {
         button.GetComponentInChildren<Text>().text = buildingMode ? "Building Mode\nON" : "Building Mode\nOFF";
         foreach (GameObject obj in ImportIFC.itemList) {
             if (buildingMode) {
-                //obj.GetComponent<Renderer>().enabled = false;
+                obj.GetComponent<Renderer>().enabled = false;
                 foreach (Transform child in obj.transform) {
                     child.GetComponent<Renderer>().enabled = true;
                 }
             } else {
-                //obj.GetComponent<Renderer>().enabled = true;
+                obj.GetComponent<Renderer>().enabled = true;
                 foreach (Transform child in obj.transform) {
                     child.GetComponent<Renderer>().enabled = false;
                 }

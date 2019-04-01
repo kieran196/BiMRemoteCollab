@@ -12,15 +12,19 @@ public class determineLocalPlayer : NetworkBehaviour {
     public GameObject menuCanvas;
     public Text playerNameText;
     public bool assignIdOnLoad;
+    private Transform oldParent;
 
 
     //[SyncVar(hook = "onNameChange")]
     [SyncVar]
     public string playerName;
+    public Transform trackedSpace;
 
     private void Start() {
         rig = GetComponent<cameraRigHandler>().currentRig;
+        trackedSpace = GameObject.FindGameObjectWithTag("trackedSpace").transform;
         this.transform.SetParent(GameObject.Find("Parent").transform);
+        GameObject.Find("Parent").transform.SetParent(trackedSpace);
     }
 
     public GameObject[] getUsers() {
@@ -49,7 +53,6 @@ public class determineLocalPlayer : NetworkBehaviour {
             if(user.GetComponent<cameraRigHandler>().rigType != null && user.GetComponent<cameraRigHandler>().rigType != "" && user.transform.Find(user.GetComponent<cameraRigHandler>().rigType).gameObject.activeInHierarchy == false) {
                 user.transform.Find(user.GetComponent<cameraRigHandler>().rigType).gameObject.SetActive(true);
                 if(user.GetComponent<cameraRigHandler>().lastRig != null && user.GetComponent<cameraRigHandler>().lastRig != "") {
-                    print(user.GetComponent<cameraRigHandler>().lastRig.Length);
                     user.transform.Find(user.GetComponent<cameraRigHandler>().lastRig).gameObject.SetActive(false);
                 }
             }

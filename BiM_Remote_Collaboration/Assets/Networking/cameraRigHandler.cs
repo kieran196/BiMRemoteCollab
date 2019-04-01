@@ -49,6 +49,25 @@ public class cameraRigHandler : NetworkBehaviour {
     public Transform drawParent;
     public enum GAME_STATES {MENU, GAME}
     public GAME_STATES currentState;
+    private GameObject world;
+
+    private Vector3 originalPos;
+    private Vector3 originalRot;
+    private Transform trackedSpace;
+    private Transform parent;
+
+    private void Start() {
+        trackedSpace = GameObject.FindGameObjectWithTag("trackedSpace").transform;
+        parent = GameObject.Find("Parent").transform;
+    }
+
+
+    public void setMeshVisibility(bool enabled) {
+        foreach (Transform child in world.transform) {
+            child.GetComponent<MeshCollider>().enabled = enabled;
+            child.GetComponent<MeshRenderer>().enabled = enabled;
+        }
+    }
 
     public void updateLabel() {
         Debug.Log("Updating these labels..");
@@ -120,6 +139,28 @@ public class cameraRigHandler : NetworkBehaviour {
         }
     }
 
+    void rearrangeWorld () {
+        print("Rearranging world..");
+        if (currentRig == AR_Rig) {
+            transform.SetParent(null);
+            if (isLocalPlayer) {
+                world.transform.SetParent(trackedSpace);
+                world.transform.localEulerAngles = originalRot;
+                world.transform.localPosition = originalPos;
+            }
+        } else {
+            transform.SetParent(parent);
+            transform.localEulerAngles = Vector3.zero;
+            transform.localPosition = Vector3.zero;
+            if (isLocalPlayer) {
+                world.transform.SetParent(null);
+                //world.transform.localEulerAngles = originalRot;
+                //world.transform.localPosition = originalPos;
+                setMeshVisibility(true);
+            }
+        }
+    }
+
     void AutoSwitchClientHololens() {
         print("Auto Switching Client..");
         GameObject rig = AR_Rig;
@@ -142,11 +183,12 @@ public class cameraRigHandler : NetworkBehaviour {
             if(rig == null) return;
             print("Activated Rig:"+rig.name);
             CmdLastRig();
-            if(currentRig == null) currentRig = rig; CmdAssignRig(rig.name); mainPanel.SetActive(false); sidePanel.SetActive(true); loadPrefabs(); currentState = GAME_STATES.GAME;
+            if(currentRig == null) currentRig = rig; CmdAssignRig(rig.name); mainPanel.SetActive(false); sidePanel.SetActive(true); loadPrefabs(); currentState = GAME_STATES.GAME; rearrangeWorld();
 
-            if(rig.activeInHierarchy == false) {
+            if (rig.activeInHierarchy == false) {
                 currentRig.SetActive(false);
                 currentRig = rig;
+                rearrangeWorld();
                 CmdAssignRig(rig.name);
                 updateLabel();
             }
@@ -165,6 +207,11 @@ public class cameraRigHandler : NetworkBehaviour {
     public bool VRActivated = false;
     public bool rpcVarAssigned = false;
     private void Update() {
+        if (world == null) {
+            world = GameObject.FindGameObjectWithTag("World");
+            originalPos = world.transform.localPosition;
+            originalRot = world.transform.localEulerAngles;
+        }
         if(isLocalPlayer && !usingHololens) {
             if(currentRig != null) {
                 CmdAssignRig(currentRig.name);
@@ -181,6 +228,7 @@ public class cameraRigHandler : NetworkBehaviour {
         print("OnStartLocalPlayer called.. IS THIS COMPILING?");
         if(isLocalPlayer) {
             this.enabled = true;
+            this.transform.Find("MenuScreen").gameObject.SetActive(true);
             this.transform.Find("MenuScreen").GetComponent<Canvas>().enabled = true;
             this.transform.Find("MenuScreen").GetComponentInChildren<Camera>().enabled = true;
             print("Canvas loaded.." + this.transform.Find("MenuScreen").GetComponent<Canvas>().enabled);

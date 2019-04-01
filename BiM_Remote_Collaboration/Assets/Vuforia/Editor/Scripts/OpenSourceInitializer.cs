@@ -72,5 +72,9 @@ public static class OpenSourceInitializer
             throw new System.NotImplementedException();
         }
 
+        void IDefaultBehaviourAttacher.AddDefaultModelRecoEventHandler(GameObject go, ModelTargetBehaviour modelTargetTemplate)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

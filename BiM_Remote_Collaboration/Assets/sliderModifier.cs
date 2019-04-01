@@ -8,7 +8,7 @@ public class sliderModifier : MonoBehaviour {
     private Transform model;
 
     public void Start() {
-        model = GameObject.FindGameObjectWithTag("trackedSpace").transform.GetChild(0);
+        model = GameObject.FindGameObjectWithTag("World").transform;
     }
 
     public void sliderChanged() {

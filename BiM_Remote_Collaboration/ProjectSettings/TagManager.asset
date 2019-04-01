@@ -9,6 +9,7 @@ TagManager:
   - ExcludeTeleport
   - TeleportIgnore
   - trackedSpace
+  - World
   layers:
   - Default
   - TransparentFX
