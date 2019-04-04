@@ -10,6 +10,7 @@ public class Raycast : MonoBehaviour {
     private Vector3 hitPoint;
     public GameObject mirroredCube;
     public GameObject selectedObject;
+    public GameObject hitPointObject;
 
     private void ShowLaser(RaycastHit hit) {
         //mirroredCube.SetActive(false);
@@ -17,6 +18,8 @@ public class Raycast : MonoBehaviour {
         laserTransform.position = Vector3.Lerp(this.transform.position, hitPoint, .5f);
         laserTransform.LookAt(hitPoint);
         laserTransform.localScale = new Vector3(laserTransform.localScale.x, laserTransform.localScale.y, hit.distance);
+
+        hitPointObject.transform.position = hitPoint;
     }
 
     private void ShowLaser() {
@@ -38,9 +41,18 @@ public class Raycast : MonoBehaviour {
     }
     // Use this for initialization
     void Start () {
+        //CmdspawnLaser();
         laser = Instantiate(laserPrefab);
         laserTransform = laser.transform;
     }
+
+    
+    /*[Command]
+    public void CmdspawnLaser() {
+        laser = Instantiate(laserPrefab);
+        NetworkServer.Spawn(laser);
+
+    }*/
 
     private GameObject last2DObject;
     public void Convert2DTo3D(GameObject obj) {

@@ -356,6 +356,73 @@ public class buttonEvents : MonoBehaviour {
             newLayer.GetComponentInChildren<Text>().text = name;
             yVal -= 10;
         }
+        initializeDropdown();
+    }
+
+    public void initializeDropdown() {
+        Transform firstLayer = layerParent.transform.GetChild(1);
+        firstLayer.GetComponentInChildren<Dropdown>().ClearOptions();
+        Dropdown.OptionData opt1 = new Dropdown.OptionData();
+        opt1.text = "N/A";
+        firstLayer.GetComponentInChildren<Dropdown>().options.Add(opt1);
+        for (int i = 0; i < ImportIFC.itemReferences.Count; i++) {
+            Dropdown.OptionData dropdownOption = new Dropdown.OptionData();
+            dropdownOption.text = i.ToString();
+            firstLayer.GetComponentInChildren<Dropdown>().options.Add(dropdownOption);
+        }
+        int count = 1;
+        foreach (Transform layer in layerParent.transform) {
+           // print("LAYER: " + layer.name);
+            if (layer.GetComponentInChildren<Dropdown>() != null) {
+                layer.GetComponentInChildren<Dropdown>().options = firstLayer.GetComponentInChildren<Dropdown>().options;
+                layer.GetComponentInChildren<Dropdown>().value = count;
+                count++;
+            }
+            print(count);
+            
+        }
+    }
+
+    public bool objectIsBimLayer(GameObject obj) {
+        return (obj != null && obj.transform.parent != null && obj.transform.parent.tag == "World") ? true : false;
+    }
+
+    public RuntimeAnimatorController highlightController;
+
+    public void highlightTool() {
+        GameObject selectedObj = raycast.selectedObject;
+        if (objectIsBimLayer(selectedObj)) {
+            if (selectedObj.GetComponent<Animator>() == null) { // Set animator
+                Animator animator = selectedObj.AddComponent<Animator>();
+                animator.runtimeAnimatorController = highlightController;
+            } else { // Animator already exists
+                selectedObj.GetComponent<Animator>().enabled = !selectedObj.GetComponent<Animator>().enabled;
+            }
+            //if (selectedObj.GetComponent<Animator>().GetBool("highlightedObject"))
+        }
+        //raycast.selectedObject
+    }
+
+    public static readonly float VISUALIZE_TIME = 5;
+    private float scaleVal = 0;
+    public bool visualizingLayers = false;
+    private bool buildComplete = false;
+    private int objIndex = 1;
+
+    public void visualizeLayers() {
+        visualizingLayers = true;
+        if (scaleVal <= 1) {
+            scaleVal += Time.deltaTime / VISUALIZE_TIME;
+            foreach(GameObject item in ImportIFC.itemList) {
+                item.transform.localScale = new Vector3(1f, scaleVal, 1f);
+            }
+            print("NAME:"+ImportIFC.itemList[objIndex].transform.name + " || " + ImportIFC.itemList[objIndex].GetComponent<MeshCollider>().bounds);
+            //ImportIFC.itemList[objIndex].transform.localScale = new Vector3(1f, scaleVal, 1f);
+        } else {
+            visualizingLayers = false;
+            scaleVal = 0;
+            objIndex++;
+        }
     }
 
     public void changeLayerState() {
@@ -411,6 +478,9 @@ public class buttonEvents : MonoBehaviour {
     private bool assignedLayers = false;
     // Update is called once per frame
     void Update () {
+        if (visualizingLayers) {
+            visualizeLayers();
+        }
         if (Manager.importComplete && !assignedLayers) {
             getLayers();
         }

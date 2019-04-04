@@ -24,6 +24,7 @@ public class cameraRigHandler : NetworkBehaviour {
     public GameObject VRSimulator_Rig;
     public GameObject SteamVR_Rig;
     public GameObject AR_Rig;
+    public GameObject PC_Rig;
 
     //[SyncVar]
     public GameObject currentRig;
@@ -79,7 +80,7 @@ public class cameraRigHandler : NetworkBehaviour {
     }
 
     public GameObject getRig() {
-        return Input.GetKeyDown(KeyCode.Alpha1) ? VRSimulator_Rig : Input.GetKeyDown(KeyCode.Alpha2) ? SteamVR_Rig : Input.GetKeyDown(KeyCode.Alpha3) ? AR_Rig : null;
+        return Input.GetKeyDown(KeyCode.Alpha1) ? VRSimulator_Rig : Input.GetKeyDown(KeyCode.Alpha2) ? SteamVR_Rig : Input.GetKeyDown(KeyCode.Alpha3) ? AR_Rig: Input.GetKeyDown(KeyCode.Alpha4) ? PC_Rig : null;
     }
 
     [Command]

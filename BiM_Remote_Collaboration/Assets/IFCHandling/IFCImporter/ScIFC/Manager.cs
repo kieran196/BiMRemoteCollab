@@ -21,6 +21,8 @@ public class Manager : MonoBehaviour {
 
     ImportIFC import;
 
+    public bool importAtRunTime = false;
+
     public static bool importComplete = false;
     public bool useNamesInsteadOfTypes = true;
     public string ifcName;
@@ -35,6 +37,14 @@ public class Manager : MonoBehaviour {
         import.Init();
         import.ImportFile(Path.GetFullPath(file), name, useNamesInsteadOfTypes);
 	}
+
+    public void importIFC(string path, string fileName) {
+        print("Starting IFC Import..");
+        import = GetComponentInChildren<ImportIFC>();
+        import.ImportFinished += new ImportIFC.CallbackEventHandler(ImportIsFinished);
+        //import.Init();
+        import.ImportFile(Path.GetFullPath(path), fileName, useNamesInsteadOfTypes);
+    }
 
     public void ImportIsFinished(GameObject go)
     {
@@ -52,5 +62,9 @@ public class Manager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+        if (importAtRunTime) {
+            importIFC("Assets/IFCHandling/IFCImporter/IFCFiles/" + name + ".ifc", ifcName);
+            importAtRunTime = false;
+        }
 	}
 }

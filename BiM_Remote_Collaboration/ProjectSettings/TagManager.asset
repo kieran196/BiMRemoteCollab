@@ -10,6 +10,7 @@ TagManager:
   - TeleportIgnore
   - trackedSpace
   - World
+  - IFCHandler
   layers:
   - Default
   - TransparentFX

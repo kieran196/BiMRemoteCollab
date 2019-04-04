@@ -66,17 +66,20 @@ public class ImportIFC : MonoBehaviour {
     {
         meshToIfcType = new Dictionary<Mesh, string>();
         meshToIfcVars = new Dictionary<Mesh, List<IFCVariables.IfcVar>>();
+        
         initMaterial = Resources.Load("IFCDefault", typeof(Material)) as Material;
-
+        print("initMat:"+initMaterial);
         /* prepare material assignment */
-        if (MaterialAssignment != null)
-        {
-            for (int i = 0; i < MaterialAssignment.MaterialDB.Length; ++i)
-            {
+        if (MaterialAssignment != null) {
+            for (int i = 0; i < MaterialAssignment.MaterialDB.Length; ++i) {
                 IFCMaterialAssoc mas = MaterialAssignment.MaterialDB[i];
+                if (classToMat.ContainsKey(mas.IFCClass)) {
+                    continue;
+                }
                 classToMat.Add(mas.IFCClass, mas.Material);
             }
         }
+        print("Made it past Init()");
     }
 
     public void ImportFile(string path, string name, bool useNamesInsteadOfTypes)
@@ -93,7 +96,7 @@ public class ImportIFC : MonoBehaviour {
         string name = objname;
         string file = path;
 
-        Debug.Log(file);
+        Debug.Log("importing:"+file);
 
         float projectScale = 1.0f;
 
