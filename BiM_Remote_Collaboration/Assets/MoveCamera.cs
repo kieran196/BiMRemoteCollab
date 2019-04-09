@@ -2,6 +2,7 @@
 // for using the mouse displacement for calculating the amount of camera movement and panning code.
 
 using UnityEngine;
+using UnityEngine.Events;
 using System.Collections;
 
 public class MoveCamera : MonoBehaviour {
@@ -15,7 +16,6 @@ wasd : basic movement
 shift : Makes camera accelerate
 space : Moves camera on X and Z axis only.  So camera doesn't gain any height*/
 
-
     float mainSpeed = 50.0f; //regular speed
     float shiftAdd = 150.0f; //multiplied by how long shift is held.  Basically running
     float maxShift = 5000.0f; //Maximum speed when holdin gshift
@@ -25,6 +25,7 @@ space : Moves camera on X and Z axis only.  So camera doesn't gain any height*/
     private Camera cam;
     private Transform lastSelectedObject;
     private Color oldColor;
+    public buttonEventsPC buttonEvents;
 
     private void Start() {
         cam = GetComponent<Camera>();
@@ -45,6 +46,7 @@ space : Moves camera on X and Z axis only.  So camera doesn't gain any height*/
             if (Input.GetMouseButtonDown(0)) {
                 Debug.Log("You selected the " + hit.transform.name);
                 if (lastSelectedObject != null && lastSelectedObject != hit.transform) {
+                    //buttonEvents.highlightTool(hit.transform.gameObject);
                     //hit.transform.GetComponent<Renderer>().material.color = lastSelectedObject.GetComponent<Renderer>().material.color;
                     lastSelectedObject.transform.GetComponent<Renderer>().material.color = oldColor;
                 }

@@ -444,13 +444,15 @@ public class buttonEvents : MonoBehaviour {
     //private bool selectedObject = false;
 
     public void selectObject() {
-        GameObject button = EventSystem.current.currentSelectedGameObject;
-        Vector3 size = raycast.selectedObject.GetComponent<MeshCollider>().bounds.size;
-        Vector3 dim = raycast.selectedObject.GetComponent<MeshCollider>().bounds.center;
+        if (raycast.selectedObject != null) {
+            GameObject button = EventSystem.current.currentSelectedGameObject;
+            Vector3 size = raycast.selectedObject.GetComponent<MeshCollider>().bounds.size;
+            Vector3 dim = raycast.selectedObject.GetComponent<MeshCollider>().bounds.center;
 
-        //selectedObject = !selectedObject;
-        GameObject panel = button.transform.GetChild(1).gameObject;
-        panel.GetComponentInChildren<Text>().text = "Dim: "+ size + "\nPos: "+ dim+ "";
+            //selectedObject = !selectedObject;
+            GameObject panel = button.transform.GetChild(1).gameObject;
+            panel.GetComponentInChildren<Text>().text = "Dim: " + size + "\nPos: " + dim + "";
+        }
     }
 
     private bool buildingMode = false;

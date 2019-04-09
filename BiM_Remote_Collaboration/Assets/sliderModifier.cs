@@ -12,8 +12,12 @@ public class sliderModifier : MonoBehaviour {
     }
 
     public void sliderChanged() {
-
-        float scale = GetComponent<Slider>().value / 10f;
+        float scale = 0;
+        if (transform.parent.parent.parent.name == "VuforiaRig") {
+            scale = GetComponent<Slider>().value / 10f;
+        } else {
+            scale = GetComponent<Slider>().value;
+        }
         model.localScale = new Vector3(scale, scale, scale);
         print("Change scale");
     }
